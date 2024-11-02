@@ -102,6 +102,18 @@ footer {
     margin-top: 20px;
     transition: background-color 0.3s;
 }
+.about-text {
+    font-family: 'Georgia', serif; /* Cambiar a una fuente serif más elegante */
+    font-size: 20px; /* Aumentar el tamaño de la fuente */
+    line-height: 1.6; /* Mejorar la legibilidad con un mayor interlineado */
+    color: #444444; /* Un tono de gris más suave para el texto */
+    margin: 20px 0; /* Espacio alrededor del texto */
+    text-align: left; /* Alinear el texto a la izquierda */
+    padding: 10px; /* Añadir un poco de padding para separación */
+    background-color: #F9F9F9; /* Fondo muy suave para destacar el texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
 
 .contact-button:hover {
     background-color: #1A1A1A; /* Color del botón al pasar el ratón */
