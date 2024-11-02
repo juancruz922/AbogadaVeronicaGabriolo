@@ -69,33 +69,19 @@ nav ul li a:hover {
     color: #1A1A1A; /* Títulos en gris muy oscuro */
 }
 
-.services-list,
-.about-text ul {
-    list-style: none; /* Eliminar los puntos predeterminados */
-    padding: 0; /* Eliminar el padding */
-    margin: 20px 0; /* Espaciado uniforme */
+.services-list {
+    list-style-type: disc;
+    margin-left: 0; /* Eliminar margen izquierdo */
+    padding: 0; /* Eliminar padding */
+    display: flex;
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar elementos */
 }
 
-.services-list li,
-.about-text li {
-    position: relative; /* Para posicionar el pseudo-elemento */
-    padding-left: 20px; /* Espacio para el pseudo-elemento */
-    margin-bottom: 10px; /* Espaciado entre los elementos */
-    font-size: 18px; /* Tamaño de fuente uniforme */
-    color: #333; /* Color de texto */
-}
-
-.services-list li::before,
-.about-text li::before {
-    content: ''; /* Generar contenido vacío */
-    position: absolute; /* Posicionamiento absoluto */
-    left: 0; /* Alinear a la izquierda */
-    top: 50%; /* Centrar verticalmente */
-    transform: translateY(-50%); /* Ajustar para centrar */
-    width: 10px; /* Ancho del punto */
-    height: 10px; /* Alto del punto */
-    background-color: #333; /* Color del punto */
-    border-radius: 50%; /* Redondear para que sea un círculo */
+.services-list li {
+    font-size: 18px;
+    margin: 5px 0; /* Espaciado uniforme entre elementos */
+    text-align: center; /* Centrar texto de cada elemento */
 }
 
 footer {
@@ -152,5 +138,10 @@ footer {
 
     .services-text, .about-text {
         margin: 10px 0; /* Reducir el margen */
+    }
+
+    .services-list {
+        flex-direction: column; /* Alinear en columna */
+        align-items: center; /* Centrar elementos */
     }
 }
