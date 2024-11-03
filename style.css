@@ -5,6 +5,14 @@ body {
     background-color: #D9D9D9; /* Fondo gris medio */
     color: #333333; /* Texto gris oscuro */
 }
+  .about-text {
+    text-align: center; /* Alinear el texto al centro */
+    display: flex; /* Usar flexbox para centrar */
+    flex-direction: column; /* Colocar elementos en columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
 
 header {
     background-color: #333333; /* Gris oscuro para el encabezado */
@@ -102,6 +110,7 @@ footer {
     margin-top: 20px;
     transition: background-color 0.3s;
 }
+
 .about-text {
     font-family: 'Georgia', serif; /* Cambiar a una fuente serif más elegante */
     font-size: 20px; /* Aumentar el tamaño de la fuente */
@@ -113,7 +122,6 @@ footer {
     background-color: #F9F9F9; /* Fondo muy suave para destacar el texto */
     border-radius: 5px; /* Bordes redondeados */
 }
-
 
 .contact-button:hover {
     background-color: #1A1A1A; /* Color del botón al pasar el ratón */
@@ -130,6 +138,74 @@ footer {
 .contact-item a:hover {
     color: #B0B0B0; /* Cambia el color del texto al pasar el ratón */
 }
+
+.accordion {
+    margin: 20px auto; /* Centrar el acordeón */
+    width: 100%; /* Asegúrate de que el acordeón ocupa el 100% del contenedor */
+    max-width: 600px; /* Ajusta este valor al ancho que desees */
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color:#909090; /* Fondo gris para el botón */
+    color: white;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.accordion-button:hover {
+    background-color: #b2b2b2; /* Color de fondo al pasar el ratón */
+}
+
+.accordion-arrow {
+    float: right;
+    transition: transform 0.3s;
+    
+}
+
+
+.accordion-content {
+    display: block; /* Mantener visible al abrir */
+    max-height: 0; /* Mantener altura máxima en 0 */
+    overflow: hidden; /* Ocultar contenido desbordante */
+    transition: max-height 0.4s ease, padding 0.4s ease; /* Suavizar la transición */
+    padding: 0 10px; /* Padding en la parte superior e inferior */
+    background-color: #D9D9D9; /* Color de fondo original */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Cuando el acordeón está abierto */
+.accordion-content.open {
+    max-height: 200px; /* Ajusta este valor al tamaño máximo deseado */
+    padding: 10px; /* Añadir padding al abrir */
+    background-color: #dcdcdc; /* Color de fondo más claro al abrir */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+
+
+
+.accordion-text {
+    max-width: 100%; /* Asegurar que el texto no exceda el ancho del acordeón */
+    overflow-wrap: break-word; /* Evitar que palabras largas desborden el contenedor */
+    color: #000000; /* Color de texto gris oscuro */
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 0; /* Eliminar márgenes del texto */
+}
+
+
+
 
 /* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
@@ -150,6 +226,39 @@ footer {
 
     .services-text, .about-text {
         margin: 10px 0; /* Reducir el margen */
+        
+    }
+
+    .services-list {
+        flex-direction: column; /* Alinear en columna */
+        align-items: center; /* Centrar elementos */
+    }
+}
+
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Cambiar a fila en móviles */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Alinea verticalmente */
+        margin: 10px 0; /* Espaciado alrededor de la barra de navegación */
+    }
+
+    .services-container, .about-container {
+        padding: 20px; /* Reducir el padding en móviles */
+    }
+  
+
+    .services-image img, .about-image img {
+        width: 90%; /* Aumentar el ancho de la imagen en móviles */
+    }
+  
+  
+
+    .services-text, .about-text {
+        margin: 10px 0; /* Reducir el margen */
+      
     }
 
     .services-list {
