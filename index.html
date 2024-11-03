@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dra. Verónica Rodríguez Gbariolo - Abogada Penal</title>
     <meta name="description" content="Dra. Verónica Rodríguez Gbariolo, especialista en derecho penal. Asesoría legal, defensa en juicio y gestión de litigios. Contáctame para una consulta.">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- Enlazando el CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,39 +15,75 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#mis-servicios"></i> Mis Servicios</a></li>
-                <li><a href="#sobre-mi"> Sobre mí</a></li>
-                <li><a href="#contacto"></i> Contacto</a></li>
+                <li><a href="#mis-servicios">Mis Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="mis-servicios" class="services-container">
-            <div class="services-image">
-                <img src="https://scontent.faep8-2.fna.fbcdn.net/v/t39.30808-6/292508836_718234469584751_7158740815621789572_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=v8IEEdG51fQQ7kNvgFqpX31&_nc_zt=23&_nc_ht=scontent.faep8-2.fna&_nc_gid=ACKqMVsQnCyAB1HTB2Tk78J&oh=00_AYCth7oMDseeBc-alMSv1hbjD9fcHwlrTd_7a7xklrMVRw&oe=672C7176" alt="Mis Servicios">
-            </div>
-            <div class="services-text" >
-                <h2>Mis Servicios </h2> 
-                <ul class="services-list">
-                    <li>Asesoría legal en derecho penal</li>
-                    <li>Defensa en juicio y representación legal</li>
-                    <li>Consultas sobre derechos y deberes legales</li>
-                    <li>Elaboración de documentos legales</li>
-                    <li>Gestión de litigios y mediación</li>
-                </ul>
-                <a href="#contacto" class="contact-button">Contactame</a>
+            <h2><i class="fas fa-briefcase"></i> Mis servicios Legales</h2>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Asesoría legal en derecho penal
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="service-description">Ofrezco asesoría personalizada en temas de derecho penal, ayudando a entender las implicancias legales y proporcionando estrategias adecuadas para cada caso.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Defensa en juicio y representación legal 
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="service-description">Proporciono representación legal completa en juicios penales, defendiendo los derechos de mis clientes con estrategias y argumentos sólidos.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Consultas sobre derechos y deberes legales
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="service-description">Brindo consultas para informar a mis clientes sobre sus derechos y deberes legales en situaciones específicas, proporcionando claridad en sus dudas legales.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Elaboración de documentos legales
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="service-description">Me encargo de la redacción y revisión de documentos legales, asegurando que cumplan con todos los requisitos legales y protejan los intereses de mis clientes.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">
+                        Gestión de litigios y mediación
+                        <span class="accordion-arrow">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p class="service-description">Ofrezco gestión de litigios y servicios de mediación para resolver disputas de manera efectiva, buscando siempre soluciones favorables para mis clientes.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="sobre-mi" class="about-container">
             <div class="about-image">
-                <img src="https://pbs.twimg.com/profile_images/1784756722289999876/JE4vfcP3_400x400.jpg" alt="Sobre mí">
+                <img src="https://scontent.faep8-2.fna.fbcdn.net/v/t39.30808-6/292508836_718234469584751_7158740815621789572_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=v8IEEdG51fQQ7kNvgFqpX31&_nc_zt=23&_nc_ht=scontent.faep8-2.fna&_nc_gid=ApIoJ5ewprZDMHGWPJQT6g4&oh=00_AYAcWfUL9WdVFcJRes9aFuTzLATz_OE86XW6ouQoI1BNWw&oe=672DC2F6">
             </div>
             <div class="about-text">
-                <h2>Sobre mí</h2>
-                <p>Aquí puedes incluir una breve descripción sobre ti, tu experiencia y tu enfoque profesional en la abogacía. Con años de experiencia, estoy comprometida con ofrecer la mejor asistencia legal a mis clientes.</p>
-            </div>
+    <h2><i class="fas fa-user"></i> Sobre mí</h2>
+    <p>Aquí puedes incluir una breve descripción sobre ti, tu experiencia y tu enfoque profesional en la abogacía. Con años de experiencia, estoy comprometida con ofrecer la mejor asistencia legal a mis clientes.</p>
+</div>
+
         </section>
 
         <section id="contacto" class="contact-container">
@@ -88,7 +124,5 @@
             <p>&copy; 2024 Dra. Verónica Rodríguez Gabriolo. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
-    <script src="./script.js"></script>
 </body>
 </html>
