@@ -7,12 +7,16 @@ document.querySelectorAll('.accordion-button').forEach(button => {
 
 function toggleAccordion() {
     const content = this.nextElementSibling;
-
+    
+    // Verifica si el acordeón ya está abierto
+    const isOpen = content.classList.contains('open');
+    
+    // Alterna la clase "active" y "open"
     this.classList.toggle('active');
     content.classList.toggle('open');
 
     const arrow = this.querySelector('.accordion-arrow');
-    if (content.classList.contains('open')) {
+    if (!isOpen) {
         arrow.style.transform = 'rotate(180deg)'; // Flecha hacia arriba
     } else {
         arrow.style.transform = 'rotate(0deg)'; // Flecha hacia abajo
