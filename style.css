@@ -174,22 +174,15 @@ footer {
 
 
 .accordion-content {
-    display: block; /* Mantener visible al abrir */
-    max-height: 0; /* Mantener altura máxima en 0 */
-    overflow: hidden; /* Ocultar contenido desbordante */
-    transition: max-height 0.4s ease, padding 0.4s ease; /* Suavizar la transición */
-    padding: 0 10px; /* Padding en la parte superior e inferior */
-    background-color: #D9D9D9; /* Color de fondo original */
-    border-radius: 10px; /* Bordes redondeados */
+    display: none; /* Por defecto, ocultar el contenido */
+    overflow: hidden; /* Ocultar contenido que desborde */
+    transition: max-height 0.4s ease; /* Transición suave */
 }
 
-/* Cuando el acordeón está abierto */
 .accordion-content.open {
-    max-height: 200px; /* Ajusta este valor al tamaño máximo deseado */
-    padding: 10px; /* Añadir padding al abrir */
-    background-color: #dcdcdc; /* Color de fondo más claro al abrir */
-    border-radius: 10px; /* Bordes redondeados */
+    display: block; /* Mostrar el contenido cuando esté abierto */
 }
+
 
 
 
