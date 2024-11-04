@@ -1,4 +1,4 @@
-document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
+
 // JavaScript para el acordeón
 document.querySelectorAll('.accordion-button').forEach(button => {
     button.addEventListener('click', toggleAccordion);
