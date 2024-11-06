@@ -5,6 +5,97 @@ body {
     background-color: #D9D9D9; /* Fondo gris medio */
     color: #333333; /* Texto gris oscuro */
 }
+.about-image {
+    display: flex;  /* Usamos flexbox para centrar la imagen */
+    justify-content: center;  /* Centra la imagen horizontalmente */
+    align-items: center;  /* Centra la imagen verticalmente si es necesario */
+    margin-top: 20px;  /* Espacio por encima de la imagen */
+}
+
+.about-image img {
+    width: 100%;  /* Ajusta la imagen al tamaño del contenedor */
+    max-width: 300px;  /* Máxima anchura de la imagen para que no se expanda demasiado */
+    border-radius: 12px;  /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor de la imagen */
+}
+
+/* Estilos para la sección Mis Servicios */
+#mis-servicios {
+    background-color: #f9f9f9; /* Fondo muy suave */
+    padding: 50px 20px; /* Mayor espacio para una apariencia más limpia */
+    margin-bottom: 50px; /* Separación generosa entre secciones */
+    border-radius: 12px; /* Bordes más redondeados para un look más elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente (si es necesario) */
+}
+
+/* Estilos del título */
+#mis-servicios h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333; /* Color oscuro para el título */
+    text-align: center;
+    margin-bottom: 30px; /* Espacio generoso debajo del título */
+    position: relative;
+}
+
+/* Estilo del icono junto al título */
+#mis-servicios h2 i {
+    
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+    
+    vertical-align: middle; /* Alineación vertical para que el icono esté a la par con el texto */
+}
+
+/* Estilos para la lista de servicios */
+.service-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: center; /* Centra el texto de los elementos de la lista */
+    display: inline-block; /* Hace que la lista se comporte como un bloque centrado */
+}
+
+.service-list li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555; /* Color de texto más suave */
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Estilos de los puntos (íconos) */
+.service-list li::before {
+    content: "•";
+    font-size: 1.5em;
+    color: #007BFF; /* Color del círculo */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Estilo para la lista en dispositivos móviles */
+@media (max-width: 768px) {
+    #mis-servicios {
+        padding: 40px 15px;
+    }
+
+    #mis-servicios h2 {
+        font-size: 2em;
+    }
+
+    .service-list li {
+        font-size: 1em;
+    }
+}
+
+}
+
   .about-text {
     text-align: center; /* Alinear el texto al centro */
     display: flex; /* Usar flexbox para centrar */
@@ -42,55 +133,78 @@ nav ul li a:hover {
     color: #B0B0B0; /* Color de hover */
 }
 
-.services-container, .about-container {
-    display: flex;
-    flex-direction: column; /* Cambiar a columna para móviles */
-    align-items: center; /* Centra el contenido */
-    background-color: #FFFFFF; /* Fondo blanco para las secciones */
-    padding: 40px;
-    margin: 20px 0; /* Espaciado uniforme arriba y abajo */
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+/* Estilos para la sección Mis Servicios */
+#mis-servicios {
+    background-color: #f9f9f9; /* Fondo muy suave */
+    padding: 50px 20px; /* Mayor espacio para una apariencia más limpia */
+    margin-bottom: 50px; /* Separación generosa entre secciones */
+    border-radius: 12px; /* Bordes más redondeados para un look más elegante */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
 }
 
-.services-image, .about-image {
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    width: 100%; /* Ocupa todo el ancho */
+/* Estilos del título */
+#mis-servicios h2 {
+    font-size: 2.5em;
+   
+    color: #333; /* Color oscuro para el título */
+  font-family: 'Georgia', serif; /* Cambiar a una fuente serif más elegante */
+    text-align: center;
+    margin-bottom: 30px; /* Espacio generoso debajo del título */
+    position: relative;
 }
 
-.services-image img, .about-image img {
-    width: 80%; /* Tamaño de imagen ajustado */
-    max-width: 600px; /* Establecer un ancho máximo para la imagen */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 10px;
+/* Estilo del icono junto al título */
+#mis-servicios h2 i {
+   
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+    
+    vertical-align: middle; /* Alineación vertical para que el icono esté a la par con el texto */
 }
 
-.services-text, .about-text {
-    text-align: center; /* Alinear texto al centro */
-    margin: 20px 0;
+/* Estilos para la lista de servicios */
+.service-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
 
-.services-text h2, .about-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #1A1A1A; /* Títulos en gris muy oscuro */
+.service-list li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555; /* Color de texto más suave */
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
 }
 
-.services-list {
-    list-style-type: disc;
-    margin-left: 0; /* Eliminar margen izquierdo */
-    padding: 0; /* Eliminar padding */
-    display: flex;
-    flex-direction: column; /* Alinear en columna */
-    align-items: center; /* Centrar elementos */
+/* Estilos de los puntos (íconos) */
+.service-list li::before {
+    content: "•";
+    font-size: 1.5em;
+    color: #007BFF; /* Color del círculo */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.services-list li {
-    font-size: 18px;
-    margin: 5px 0; /* Espaciado uniforme entre elementos */
-    text-align: center; /* Centrar texto de cada elemento */
+/* Estilo para la lista en dispositivos móviles */
+@media (max-width: 768px) {
+    #mis-servicios {
+        padding: 40px 15px;
+    }
+
+    #mis-servicios h2 {
+        font-size: 2em;
+    }
+
+    .service-list li {
+        font-size: 1em;
+    }
 }
+
 
 footer {
     background-color: #333333; /* Gris oscuro para el pie de página */
@@ -98,6 +212,7 @@ footer {
     text-align: center;
     padding: 15px 0;
 }
+
 
 .contact-button {
     display: inline-block;
@@ -110,6 +225,13 @@ footer {
     margin-top: 20px;
     transition: background-color 0.3s;
 }
+.about-text h2{
+  font-size: 1.8em;
+    font-weight: bold;
+    color: #333; 
+  text-align: center;
+}
+
 
 .about-text {
     font-family: 'Georgia', serif; /* Cambiar a una fuente serif más elegante */
@@ -146,7 +268,8 @@ footer {
 }
 
 .accordion-item {
-    margin-bottom: 10px;
+   
+  margin-bottom: 29px; /* Aumenta el espacio entre las preguntas */
 }
 
 .accordion-button {
@@ -174,19 +297,66 @@ footer {
 
 
 .accordion-content {
-    display: none; /* Por defecto, ocultar el contenido */
-    overflow: hidden; /* Ocultar contenido que desborde */
-    transition: max-height 0.4s ease; /* Transición suave */
+    display: block; /* Mantener visible al abrir */
+    max-height: 0; /* Mantener altura máxima en 0 */
+    overflow: hidden; /* Ocultar contenido desbordante */
+    transition: max-height 0.4s ease, padding 0.4s ease; /* Suavizar la transición */
+    padding: 0 10px; /* Padding en la parte superior e inferior */
+    background-color: #D9D9D9; /* Color de fondo original */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+/* Cuando el acordeón está abierto */
 .accordion-content.open {
-    display: block; /* Mostrar el contenido cuando esté abierto */
+    max-height: 200px; /* Ajusta este valor al tamaño máximo deseado */
+    padding: 10px; /* Añadir padding al abrir */
+    
+    border-radius: 10px; /* Bordes redondeados */
 }
 
+.faq-section {
+   
+    padding: 40px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center; /* Centrar el contenido */
+}
 
+.faq-section {
+    background-color: #FFFFFF; /* Fondo blanco para toda la sección */
+    padding: 20px;
+    border-radius: 10px;
+  padding: 40px 20px; /* Ajuste de espaciado en los lados */
+}
 
+.faq-section h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+  font-size: 1.9em;
+   
+    color: #333; /* Color oscuro para el título */
+  font-family: 'Georgia', serif; /* Cambiar a una fuente serif más elegante */
+}
 
+.accordion-button {
+    background-color: #f0f0f0; /* Fondo más claro para mayor legibilidad */
+    color: #333333; /* Color oscuro para el texto */
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
 
+.accordion-button:hover {
+    background-color: #e0e0e0; /* Color de fondo más claro al pasar el ratón */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más prominente al pasar el ratón */
+}
 
 
 .accordion-text {
@@ -208,6 +378,7 @@ footer {
         align-items: center; /* Alinea verticalmente */
         margin: 10px 0; /* Espaciado alrededor de la barra de navegación */
     }
+  
 
     .services-container, .about-container {
         padding: 20px; /* Reducir el padding en móviles */
@@ -215,6 +386,7 @@ footer {
 
     .services-image img, .about-image img {
         width: 90%; /* Aumentar el ancho de la imagen en móviles */
+      
     }
 
     .services-text, .about-text {
@@ -242,6 +414,7 @@ footer {
         padding: 20px; /* Reducir el padding en móviles */
     }
   
+  
 
     .services-image img, .about-image img {
         width: 90%; /* Aumentar el ancho de la imagen en móviles */
@@ -258,4 +431,6 @@ footer {
         flex-direction: column; /* Alinear en columna */
         align-items: center; /* Centrar elementos */
     }
+  
+
 }
